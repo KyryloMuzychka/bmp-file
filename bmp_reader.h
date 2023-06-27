@@ -1,7 +1,7 @@
 #ifndef _BMP_READER_H_
 #define _BMP_READER_H_
 
-//#pragma pack(1)
+#pragma pack(1)
 
 typedef struct BMPHeader {
     char ID[2];
@@ -29,7 +29,7 @@ typedef struct BMPFile {
     unsigned char* data;
 } BMPFile;
 
-//ß#pragma pop
+#pragma pop
 
 BMPFile* loadBMPFile(char* fname);
 void freeBMPFile(BMPFile* bmp_file);
