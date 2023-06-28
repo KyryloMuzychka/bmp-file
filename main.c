@@ -9,6 +9,7 @@ int main(int argc, char * argv[]) {
   }
   BMPFile* bmpf = loadBMPFile(argv[1]);
   printBMPHeaders(bmpf);
+  printBMPPixels(bmpf);
   freeBMPFile(bmpf);
   return 0;
 }

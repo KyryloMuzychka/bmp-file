@@ -34,5 +34,6 @@ typedef struct BMPFile {
 BMPFile* loadBMPFile(char* fname);
 void freeBMPFile(BMPFile* bmp_file);
 void printBMPHeaders(BMPFile* bmp_file);
+void printBMPPixels(BMPFile* bmpf);
 
 #endif
