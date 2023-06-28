@@ -16,7 +16,7 @@ typedef struct DIBHeader {
     unsigned int height;
     unsigned short color_planes;
     unsigned short bits_per_pixel;
-    unsigned int BI_RGB;
+    unsigned int compression;
     unsigned int data_size;
     unsigned int pheight;
     unsigned int colors_count;
@@ -33,5 +33,6 @@ typedef struct BMPFile {
 
 BMPFile* loadBMPFile(char* fname);
 void freeBMPFile(BMPFile* bmp_file);
+void printBMPHeaders(BMPFile* bmp_file);
 
 #endif
