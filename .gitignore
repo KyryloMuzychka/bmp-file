@@ -5,3 +5,4 @@
 config/
 sfdx-project.json
 bmp
+*.exe
